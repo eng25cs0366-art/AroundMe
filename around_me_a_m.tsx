@@ -189,7 +189,7 @@ export default function App() {
     window.addEventListener("storage", handleStorageEvent);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(timer);
       window.removeEventListener("storage", handleStorageEvent);
     };
   }, []);
